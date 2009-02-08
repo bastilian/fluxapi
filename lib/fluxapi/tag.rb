@@ -1,4 +1,4 @@
-class Fluxiom::User < Fluxiom
+class Fluxiom::Tag < Fluxiom
   def initialize(data)
     data.each do |k, v|
       self.instance_variable_set("@#{k}", v)

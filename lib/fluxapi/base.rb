@@ -17,4 +17,7 @@ class Fluxiom
   def users
     Fluxiom::Users.new
   end
+  def tags
+    Fluxiom::Tags.new
+  end
 end

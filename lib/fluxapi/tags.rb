@@ -1,4 +1,4 @@
-class Fluxiom::Users < Fluxiom
+class Fluxiom::Tags < Fluxiom
   include Enumerable
   def initialize
     @users = []
