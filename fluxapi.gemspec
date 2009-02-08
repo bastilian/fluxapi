@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email = %q{sebastian.graessl@gmail.com}
   s.extra_rdoc_files = ["README.txt"]
   s.summary = %q{Fluxiom API wrapper}
-  s.files = ['History.txt', 'README.txt', 'lib/fluxapi.rb', 'lib/fluxapi/base.rb', 'lib/fluxapi/asset.rb', 'lib/fluxapi/assets.rb', 'lib/fluxapi/user.rb', 'lib/fluxapi/users.rb','lib/fluxapi/account.rb']
+  s.files = ['History.txt', 'README.txt', 'lib/fluxapi.rb', 'lib/fluxapi/base.rb', 'lib/fluxapi/asset.rb', 'lib/fluxapi/assets.rb', 'lib/fluxapi/user.rb', 'lib/fluxapi/users.rb','lib/fluxapi/account.rb', 'lib/fluxapi/tag.rb', 'lib/fluxapi/tags.rb']
   s.add_dependency('httparty', '>= 0.3.0')
 
 end
