@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{fluxapi}
-  s.version = "0.5.0"
+  s.version = "0.5.1"
  
   s.authors = ["Sebastian Gräßl"]
   s.date = %q{2009-02-08}
