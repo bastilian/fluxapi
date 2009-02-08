@@ -23,7 +23,15 @@ require 'fluxapi'
 
 == INSTALL:
 
-sudo gem install fluxapi
+Run the following if you haven't already:
+
+$ gem sources -a http://gems.github.com
+
+Install the gem(s):
+
+$ sudo gem install bastilian-fluxapi
+
+
 
 == LICENSE:
 
