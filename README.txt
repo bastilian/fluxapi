@@ -3,6 +3,8 @@
 == DESCRIPTION:
 
 A API-wrapper for the Fluxiom-API (http://www.fluxiom.com)
+http://fluxapi.rubyforge.org/
+
 
 == FEATURES/PROBLEMS:
 
