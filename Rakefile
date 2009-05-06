@@ -9,4 +9,5 @@ Echoe.new('fluxapi', '0.5.1') do |p|
   p.author         = "Sebastian Gräßl"
   p.email          = "sebastian.graessl@gmail.com"
   p.project        = "fluxapi"
+  p.runtime_dependencies = ["httparty >= 0.4.3"]
 end
