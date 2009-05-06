@@ -9,4 +9,7 @@ class Fluxiom::Assets < Fluxiom
   def each
     @assets.each {|pt| yield pt} 
   end
+  def first
+    @assets.first
+  end
 end
