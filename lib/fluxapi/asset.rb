@@ -5,4 +5,14 @@ class Fluxiom::Asset < Fluxiom
       self.class.send(:define_method, k, proc{self.instance_variable_get("@#{k}")})
     end
   end
+  def download(path_to_file)
+    Net::HTTP.start(self.class.base_uri.gsub('https://', ''), 443) {|http|
+      req = Net::HTTP::Get.new("/api/assets/download/#{self.id}")
+      req.basic_auth 'account', 'password'
+      resp = http.request(req)
+      open(File.join(path_to_file, self.filename), 'wb') do |file|
+        file.write(resp.body)
+      end
+    }
+  end
 end

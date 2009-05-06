@@ -22,9 +22,10 @@ end
 
 def register_requests
   Dir.new(File.join(File.dirname(__FILE__),'fixtures')).each do |file|
-    next if file == '.' || file == '..'
+    next if file == '.' || file == '..' || !file.include?('.xml')
     stub_get('/api/' + file, file)
   end
+  FakeWeb.register_uri(:get, "http://account:password@account.fluxiom.com:443/api/assets/download/182535", :response => File.expand_path(File.dirname(__FILE__) + '/fixtures/download_response'))
 end
 
 def set_account
