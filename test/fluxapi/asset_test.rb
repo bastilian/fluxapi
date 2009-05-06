@@ -5,12 +5,13 @@ class Fluxiom::AssetTest < Test::Unit::TestCase
   def setup
     set_account
     @asset = @fluxiom.assets.first
-    @tmp_dir = File.join(File.dirname(__FILE__), '..', 'tmp')
+    @tmp_dir = File.join(File.dirname(__FILE__), '..', '..', 'tmp')
     FileUtils.mkdir_p @tmp_dir
   end
 
   def test_download
     assert @asset.download(@tmp_dir).size > 0
+    assert File.exists?(File.join(@tmp_dir, @asset.filename))
   end
 
   def teardown
