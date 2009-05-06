@@ -17,7 +17,7 @@ def fixture(filename)
 end
 
 def stub_get(url, file)
-  FakeWeb.register_uri(:get, "http://user:password@account.fluxiom.com:80#{url}", :string => fixture(file))
+  FakeWeb.register_uri(:get, "https://user:password@account.fluxiom.com:443#{url}", :string => fixture(file))
 end
 
 def register_requests

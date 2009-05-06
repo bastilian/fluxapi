@@ -2,7 +2,7 @@ class Fluxiom
   include HTTParty
   format :xml
   def initialize(sub, u, p)
-    self.class.base_uri sub + '.fluxiom.com'
+    self.class.base_uri 'https://'+ sub + '.fluxiom.com'
     self.class.basic_auth u, p
   end
   def self.call(url)
