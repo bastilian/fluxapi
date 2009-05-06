@@ -16,7 +16,7 @@ class Fluxiom::AssetsTest < Test::Unit::TestCase
   end
 
   def test_find
-    assert @assets.find(185388).id.to_i, 185388
+    assert @assets.find(182535).id.to_i, 182535
   end
 
 end
