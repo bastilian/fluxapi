@@ -13,9 +13,11 @@ Rakefile
 README.txt
 test/fixtures/account.xml
 test/fixtures/assets.xml
+test/fixtures/download_response
 test/fixtures/tags.xml
 test/fixtures/users.xml
 test/fluxapi/account_test.rb
+test/fluxapi/asset_test.rb
 test/fluxapi/assets_test.rb
 test/fluxapi_test.rb
 test/test_helper.rb
