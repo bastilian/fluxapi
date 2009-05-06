@@ -25,7 +25,7 @@ def register_requests
     next if file == '.' || file == '..' || !file.include?('.xml')
     stub_get('/api/' + file, file)
   end
-  FakeWeb.register_uri(:get, "https://account:password@account.fluxiom.com:443/api/assets/download/182535", :response => File.expand_path(File.dirname(__FILE__) + '/fixtures/download_response'))
+  FakeWeb.register_uri(:get, "https://user:password@account.fluxiom.com:443/api/assets/download/182535", :response => File.expand_path(File.dirname(__FILE__) + '/fixtures/download_response'))
 end
 
 def set_account
