@@ -6,7 +6,9 @@ class Fluxiom::Asset < Fluxiom
     end
   end
   def download(path_to_file)
-    Net::HTTP.start(self.class.base_uri.gsub('https://', ''), 443) {|http|
+    session = Net::HTTP.new(self.class.base_uri.gsub('https://', ''), 443)
+    session.use_ssl = true
+    session.start() {|http|
       req = Net::HTTP::Get.new("/api/assets/download/#{self.id}")
       req.basic_auth 'account', 'password'
       resp = http.request(req)
