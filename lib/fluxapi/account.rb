@@ -8,4 +8,7 @@ class Fluxiom::Account < Fluxiom
   def assets
     Fluxiom::Assets.new
   end
+  def has_branding?
+    self.branding == 'active'
+  end
 end
