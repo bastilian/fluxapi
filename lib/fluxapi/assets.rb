@@ -12,4 +12,7 @@ class Fluxiom::Assets < Fluxiom
   def first
     @assets.first
   end
+  def find(id)
+    @assets.find {|a| a.id == id }
+  end
 end
