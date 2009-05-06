@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tags type="array">
+  <tag>
+    <id type="integer">8896</id>
+    <tag>boom</tag>
+  </tag>
+  <tag>
+    <id type="integer">8312</id>
+    <tag>essential</tag>
+  </tag>
+  <tag>
+    <id type="integer">8409</id>
+    <tag>music</tag>
+  </tag>
+  <tag>
+  <id type="integer">9150</id>
+    <tag>scrubs</tag>
+  </tag>
+</tags>

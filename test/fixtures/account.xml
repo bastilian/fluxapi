@@ -1,0 +1,26 @@
+<account>
+  <subdomain>validcode</subdomain>
+  <company_name>Validcode</company_name>
+  <account_holder>Sebastian Graessl</account_holder>
+  <address/>
+  <country/>
+  <location/>
+  <zip_code/>
+  <plan ssl="true" stages="true" multiple_users="true" versions="true" branding="true" full_text_search="true">Promo</plan>
+  <branding>active</branding>
+  <branding_info>
+    <title>validcode fluxiom</title>
+    <font_color>#ffffff</font_color>
+    <top_color>#448489</top_color>
+    <bottom_color>#55a9d3</bottom_color>
+    <logo>/t/1idrges12qvofq3ljtzrdmpjw2vzsutx6/logo.gif</logo>
+    <background_image>
+      /t/1idrges12qvofq3ljtzrdmpjw2vzsutx6/header-background.gif
+    </background_image>
+    <updated type="datetime">2009-05-05T21:16:15+02:00</updated>
+  </branding_info>
+  <trial>false</trial>
+  <stats used_space="5407117312" used_bandwidth="2198002182" available_space="3182817280" available_bandwidth="4244448762"/>
+  <created_on type="datetime">2006-03-24T00:00:00+01:00</created_on>
+  <updated_on type="datetime">2006-03-24T00:00:00+01:00</updated_on>
+</account>

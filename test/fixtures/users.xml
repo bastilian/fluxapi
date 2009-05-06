@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users type="array">
+  <user>
+    <id type="integer">5018</id>
+    <first_name>Bas</first_name>
+    <last_name>Ti</last_name>
+    <email>sebastian.graessl@mac.com</email>
+    <created-on type="date">2008-10-11T12:29:54+02:00</created-on>
+
+    <updated-on type="date">2009-02-23T14:55:50+01:00</updated-on>
+  </user>
+  <user>
+    <id type="integer">5070</id>
+    <first_name>Alexander</first_name>
+    <last_name>Danmayer</last_name>
+    <email>a.danmayer@wollzelle.com</email>
+
+    <created-on type="date">2008-11-05T16:22:06+01:00</created-on>
+    <updated-on type="date">2009-02-23T14:55:50+01:00</updated-on>
+  </user>
+  <user>
+    <id type="integer">5069</id>
+    <first_name>s</first_name>
+    <last_name>ss</last_name>
+
+    <email>seg.spamail@gmail.com</email>
+    <created-on type="date">2008-11-05T12:48:00+01:00</created-on>
+    <updated-on type="date">2008-11-05T12:48:01+01:00</updated-on>
+  </user>
+  <user>
+    <id type="integer">5166</id>
+    <first_name>Sebastian</first_name>
+
+    <last_name>Graessl</last_name>
+    <email>sebastian@gmail.com</email>
+    <created-on type="date">2008-12-02T16:07:25+01:00</created-on>
+    <updated-on type="date">2009-02-23T14:55:50+01:00</updated-on>
+    <groups type="array">
+      <group>
+        <id type="integer">1</id>
+
+        <title>Standard users</title>
+      </group>
+    </groups>
+  </user>
+  <user>
+    <id type="integer">4983</id>
+    <first_name>Elias</first_name>
+    <last_name>Dorner</last_name>
+
+    <email>emel@sbox.tugraz.at</email>
+    <created-on type="date">2008-10-02T16:38:29+02:00</created-on>
+    <updated-on type="date">2009-02-23T14:55:50+01:00</updated-on>
+  </user>
+  <user>
+    <id type="integer">5115</id>
+    <first_name>Martin</first_name>
+
+    <last_name>Breuss</last_name>
+    <email>martin.breuss@gmx.at</email>
+    <created-on type="date">2008-11-25T15:34:21+01:00</created-on>
+    <updated-on type="date">2009-02-23T14:55:50+01:00</updated-on>
+  </user>
+  <user>
+    <id type="integer">5606</id>
+
+    <first_name>Thomas</first_name>
+    <last_name>Koenig</last_name>
+    <email>t.koenig@wollzelle.com</email>
+    <created-on type="date">2009-03-03T17:18:40+01:00</created-on>
+    <updated-on type="date">2009-03-04T11:11:43+01:00</updated-on>
+  </user>
+
+  <user>
+    <id type="integer">5124</id>
+    <first_name>Ben</first_name>
+    <last_name>Steiner</last_name>
+    <email>ben_steiner@hotmail.com</email>
+    <created-on type="date">2008-11-28T23:28:59+01:00</created-on>
+
+    <updated-on type="date">2009-02-23T17:56:30+01:00</updated-on>
+    <rights type="array">
+      <right>
+        <allow>assets.administrate</allow>
+        <id type="integer">3</id>
+      </right>
+    </rights>
+    <groups type="array">
+      <group>
+
+        <id type="integer">1</id>
+        <title>Standard users</title>
+      </group>
+    </groups>
+  </user>
+  <user>
+    <id type="integer">5000</id>
+    <first_name>Thomas</first_name>
+
+    <last_name>Raggam</last_name>
+    <email>raggamthomas@gmx.at</email>
+    <created-on type="date">2008-10-07T17:32:09+02:00</created-on>
+    <updated-on type="date">2009-02-23T14:55:50+01:00</updated-on>
+  </user>
+  <user>
+    <id type="integer">5039</id>
+
+    <first_name>Boy</first_name>
+    <last_name>man</last_name>
+    <email>sebastian@wollzelle.com</email>
+    <created-on type="date">2008-10-20T12:01:41+02:00</created-on>
+    <updated-on type="date">2009-02-23T14:55:50+01:00</updated-on>
+  </user>
+
+  <user>
+    <id type="integer">128</id>
+    <first_name>Sebastian</first_name>
+    <last_name>Graessl</last_name>
+    <email>sebastian.graessl@gmail.com</email>
+    <created-on type="date">2006-03-24T15:28:11+01:00</created-on>
+
+    <updated-on type="date">2008-11-27T14:57:37+01:00</updated-on>
+    <rights type="array">
+      <right>
+        <allow>assets.administrate</allow>
+        <id type="integer">3</id>
+      </right>
+    </rights>
+    <groups type="array">
+      <group>
+
+        <id type="integer">2</id>
+        <title>Administrators</title>
+      </group>
+      <group>
+        <id type="integer">1</id>
+        <title>Standard users</title>
+      </group>
+
+    </groups>
+  </user>
+</users>
