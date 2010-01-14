@@ -17,7 +17,7 @@ def fixture(filename)
 end
 
 def stub_get(url, file)
-  FakeWeb.register_uri(:get, "https://user:password@account.fluxiom.com:443#{url}", :string => fixture(file))
+  FakeWeb.register_uri(:get, "https://user:password@account.fluxiom.com:443#{url}", :body => fixture(file))
 end
 
 def register_requests
@@ -25,7 +25,8 @@ def register_requests
     next if file == '.' || file == '..' || !file.include?('.xml')
     stub_get('/api/' + file, file)
   end
-  FakeWeb.register_uri(:get, "https://user:password@account.fluxiom.com:443/api/assets/download/182535", :response => File.expand_path(File.dirname(__FILE__) + '/fixtures/download_response'))
+  FakeWeb.register_uri(:get, "https://user:password@account.fluxiom.com:443/api/assets/182535/download", :response => File.expand_path(File.dirname(__FILE__) + '/fixtures/download_response'))
+  FakeWeb.register_uri(:post, "https://user:password@account.fluxiom.com:443/api/assets/182535/tag", :body => "", :status => [201, "Created"])
 end
 
 def set_account
