@@ -1,12 +1,15 @@
 class Fluxiom::Tags < Fluxiom
   include Enumerable
   def initialize
-    @users = []
+    @tags = []
     self.class.call('/api/tags.xml')['tags'].each do |v|
-      @users << Fluxiom::Tag.new(v)
+      @tags << Fluxiom::Tag.new(v)
     end
   end
   def each
-    @users.each {|pt| yield pt} 
+    @tags.each {|pt| yield pt} 
+  end
+  def first
+    @tags.first
   end
 end
