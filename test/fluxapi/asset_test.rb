@@ -14,6 +14,12 @@ class Fluxiom::AssetTest < Test::Unit::TestCase
     assert File.exists?(File.join(@tmp_dir, @asset.filename))
   end
 
+  def test_tagging
+    prev_size = !@asset.tags.nil? ? @asset.tags.split(' ').length : 0
+    @asset.tag(@fluxiom.tags.first)
+    assert_equal prev_size+1, @asset.tags.split(' ').length
+  end
+
   def teardown
     FileUtils.rm_r @tmp_dir
   end
