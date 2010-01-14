@@ -1,12 +1,20 @@
 class Fluxiom
   include HTTParty
   format :xml
+  attr_accessor :base_url
   def initialize(sub, u, p)
-    self.class.base_uri 'https://'+ sub + '.fluxiom.com'
-    self.class.basic_auth u, p
+    @@base_url = 'https://'+ sub + '.fluxiom.com'
+    @@user, @@password = u, p
   end
   def self.call(url)
-    get(url)
+    base_uri @@base_url
+    basic_auth @@user, @@password
+    get(@@base_url + url)
+  end
+  def self.post_call(url, post_data)
+    base_uri @@base_url
+    basic_auth @@user, @@password
+    post(@@base_url + url, post_data)
   end
   def account
     Fluxiom::Account.new
