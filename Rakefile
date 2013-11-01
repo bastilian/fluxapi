@@ -1,13 +1,12 @@
-require 'rubygems'
+require "bundler/gem_tasks"
+
 require 'rake'
 require 'rake/testtask'
-require 'echoe'
 
-Echoe.new('fluxapi', '0.5.5') do |p|
-  p.description    = "A fluxiom api wrapper for ruby"
-  p.url            = "http://fluxapi.rubyforge.org"
-  p.author         = "Sebastian Gräßl"
-  p.email          = "sebastian.graessl@gmail.com"
-  p.project        = "fluxapi"
-  p.runtime_dependencies = ["httparty >= 0.5.0"]
+task :default => [:test]
+
+Rake::TestTask.new do |t|
+  t.libs << "test"
+  t.test_files = FileList['test/**/*_test.rb']
+  t.verbose = true
 end
