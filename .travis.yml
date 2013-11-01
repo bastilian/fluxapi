@@ -4,3 +4,9 @@ rvm:
   - 1.9.3
   - jruby-19mode
   - rbx-19mode
+deploy:
+  provider: rubygems
+  api_key:
+    secure: cxeicyjvgA2QNjoaFzJxb2AvzTm8M2qJQyYIi+si4pme7fJfIZPwP/sY5/ufhpXeNoxJu87h1tegqpvOOw8aKYYBaTiJ6dpDOcepYNMaph8nzaLRxouwG3vAiBZ/OHn7j8pCcyYfHt/jlpxxDrlYiuRdsuHeFrI8haTZuO1lXZE=
+  on:
+    tags: true
