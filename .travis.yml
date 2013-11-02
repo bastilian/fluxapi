@@ -8,6 +8,6 @@ deploy:
   provider: rubygems
   api_key:
     secure: "AYAUOdDso/fn/x53rTaAKJv96dbGhikTf/T+aPw5buNeDYT9Wk+Ce1H0p8qmr4pLF8plMZzK3YQmGPnZNofeiP1/IklIrNnOhSDUxIpw6TwqpRRLwXpBVX3hoZJOEbUGTCpYXj+AXb/nL9YdY7M6MVJr4jsgHOYFP2LXvmL9qm8="
+  gemspec: fluxapi.gemspec
   on:
     tags: true
-    rvm: 2.0.0
