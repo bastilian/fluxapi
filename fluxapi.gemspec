@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{A Fluxiom.com api wrapper for ruby}
   spec.summary       = %q{A Fluxiom.com api wrapper for ruby}
   spec.homepage      = "https://github.com/bastilian/fluxapi"
+  spec.metadata      = { "issue_tracker" => "https://github.com/bastilian/fluxapi/issues" }
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
