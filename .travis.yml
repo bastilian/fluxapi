@@ -1,14 +1,14 @@
 language: ruby
 rvm:
-  - 2.0.0
-  - 1.9.3
-  - jruby-19mode
-  - rbx-19mode
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-19mode
 deploy:
   provider: rubygems
   api_key:
-    secure: "AYAUOdDso/fn/x53rTaAKJv96dbGhikTf/T+aPw5buNeDYT9Wk+Ce1H0p8qmr4pLF8plMZzK3YQmGPnZNofeiP1/IklIrNnOhSDUxIpw6TwqpRRLwXpBVX3hoZJOEbUGTCpYXj+AXb/nL9YdY7M6MVJr4jsgHOYFP2LXvmL9qm8="
+    secure: UgsFjQHG9CvXih7iQ18Diew4LxJOZtfoQ84nXMODNchUFSBXrJpbK67me6F19EHbeYiSoVNxXiTDLUIMvETXfE50xGfc08Wjag5v+S7+T82I0MN4dqv1eM4kPjGSbaavEcj9ma8qPGW3QqaU21fRWsNSl4btnh1kUtFltGYvhzA=
   gem: fluxapi
   on:
     tags: true
-    ruby: 2.0.0
+    repo: bastilian/fluxapi
