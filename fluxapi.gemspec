@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fluxapi/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "fluxapi"
-  spec.version       = Fluxapi::VERSION
+  spec.version       = "0.6.1"
   spec.authors       = ["Sebastian Gräßl"]
   spec.email         = ["sebastian.graessl@gmail.com"]
   spec.description   = %q{A Fluxiom.com api wrapper for ruby}
