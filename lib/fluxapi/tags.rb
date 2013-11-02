@@ -1,15 +1,19 @@
 module Fluxiom
-  class Tags < Base
+  class Tags < Endpoint
     include Enumerable
-    def initialize
+
+    def initialize(client)
+      super(client)
       @tags = []
-      self.class.call('/api/tags.xml')['tags'].each do |v|
+      client.class.get('/api/tags.xml')['tags'].each do |v|
         @tags << Fluxiom::Tag.new(v)
       end
     end
+
     def each
       @tags.each {|pt| yield pt} 
     end
+
     def first
       @tags.first
     end

@@ -1,5 +1,5 @@
 module Fluxiom
-  class User < Base
+  class User
     def initialize(data)
       data.each do |k, v|
         self.instance_variable_set("@#{k}", v)

@@ -1,5 +1,5 @@
-require 'httparty'
 require 'fluxapi/base'
+require 'fluxapi/client'
 require 'fluxapi/account'
 require 'fluxapi/asset'
 require 'fluxapi/assets'

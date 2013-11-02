@@ -1,12 +1,15 @@
 module Fluxiom
-  class Users < Base
+  class Users < Endpoint
     include Enumerable
-    def initialize
+
+    def initialize(client)
+      super
       @users = []
-      self.class.call('/api/users.xml')['users'].each do |v|
+      client.class.get('/api/users.xml')['users'].each do |v|
         @users << Fluxiom::User.new(v)
       end
     end
+
     def each
       @users.each {|pt| yield pt} 
     end
