@@ -1,33 +1,33 @@
 # fluxapi
 
-## DESCRIPTION:
-
 A API-wrapper for the Fluxiom-API (http://www.fluxiom.com)
 
 ## FEATURES/PROBLEMS:
 
 Currently very basic and only to retrieve data, not update or upload data. 
 
-## SYNOPSIS:
+## Usage:
 
 ```ruby
 require 'fluxapi'
 
-@fluxiom = Fluxiom.new('validcode', 'sebastian', 'SecretPassword')
-@fluxiom.assets
-@fluxiom.users
+fluxiom = Fluxiom.new('validcode', 'sebastian', 'SecretPassword')
+fluxiom.assets
+fluxiom.users
 ```
-
-## REQUIREMENTS:
-
-* httparty >= 0.3.0
 
 ## INSTALL:
 
 Install the gem:
 
 ```shell
-$ sudo gem install fluxapi
+$ gem install fluxapi
+```
+
+or add to Gemfile
+
+```ruby
+gem "fluxapi"
 ```
 
 ## LICENSE:
